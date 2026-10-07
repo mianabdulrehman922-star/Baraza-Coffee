@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baraza Coffee | Specialty Coffee House in Lahore</title>
+  <meta name="description" content="Discover specialty coffee, thoughtfully prepared food, and a welcoming coffee-house experience at Baraza Coffee, Johar Town Lahore. Founded 2019.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Baraza Coffee | Specialty Coffee House in Lahore">
+  <meta property="og:description" content="Coffee, Crafted With Intention. Specialty coffee house in Johar Town, Lahore.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%211A1412'/><text x='50%' y='68%' font-family='serif' font-size='55' font-weight='bold' fill='%21C29B38' text-anchor='middle'>B</text></svg>">
+
+  <!-- Fonts: Playfair Display for Editorial Headings & Plus Jakarta Sans for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Schema.org LocalBusiness / Cafe Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Baraza Coffee",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "111, Block R3, Phase 2, Johar Town",
+      "addressLocality": "Lahore",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "31.4697",
+      "longitude": "74.2728"
+    },
+    "telephone": "+923000401857",
+    "email": "info@barazacoffee.com",
+    "url": "https://barazacoffee.com",
+    "servesCuisine": ["Specialty Coffee", "Brunch", "Pastries", "Desserts"],
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "280"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-cream: #FBF9F5;
+      --bg-surface: #F4EFEB;
+      --bg-card: #FFFFFF;
+      --bg-dark: #1A1412;
+      --bg-dark-surface: #2C221E;
+      
+      --text-main: #1A1412;
+      --text-muted: #6B625D;
+      --text-light: #FBF9F5;
+      --text-light-muted: #BDB4AE;
+      
+      --accent-terracotta: #965236;
+      --accent-brass: #C29B38;
+      --accent-brass-glow: rgba(194, 155, 56, 0.15);
+      
+      --border-light: rgba(26, 20, 18, 0.08);
+      --border-dark: rgba(251, 249, 245, 0.12);
+      
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      
+      --radius-sm: 6px;
+      --radius-md: 14px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      
+      --shadow-subtle: 0 4px 20px rgba(26, 20, 18, 0.04);
+      --shadow-md: 0 10px 30px rgba(26, 20, 18, 0.08);
+      --shadow-dark: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* CSS Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      color-scheme: light;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      color: inherit;
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    /* Editorial Typography Rules */
+    h1, h2, h3, h4, .font-serif {
+      font-family: var(--font-serif);
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      color: var(--accent-terracotta);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      color: var(--text-main);
+      margin-bottom: 1.25rem;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      font-weight: 300;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.75rem;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-cream);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D5CBC4;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-terracotta);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      padding: 0.9rem 2.2rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: all var(--transition-normal);
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      z-index: 1;
+    }
+
+    .btn-dark {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      box-shadow: 0 4px 15px rgba(26, 20, 18, 0.15);
+    }
+
+    .btn-dark:hover {
+      background-color: var(--accent-terracotta);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(150, 82, 54, 0.3);
+    }
+
+    .btn-outline-dark {
+      border: 1px solid var(--text-main);
+      color: var(--text-main);
+    }
+
+    .btn-outline-dark:hover {
+      background-color: var(--text-main);
+      color: var(--text-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-light {
+      border: 1px solid rgba(251, 249, 245, 0.3);
+      color: var(--text-light);
+    }
+
+    .btn-outline-light:hover {
+      border-color: var(--text-light);
+      background-color: rgba(251, 249, 245, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .btn-brass {
+      background-color: var(--accent-brass);
+      color: var(--bg-dark);
+      font-weight: 700;
+    }
+
+    .btn-brass:hover {
+      background-color: #d1a842;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(194, 155, 56, 0.35);
+    }
+
+    /* Scroll Reveal Baseline */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1.4rem 0;
+      transition: all var(--transition-normal);
+    }
+
+    .navbar.scrolled {
+      padding: 0.9rem 0;
+      background: rgba(251, 249, 245, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .logo-text {
+      font-family: var(--font-serif);
+      font-size: 2.1rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      color: var(--text-light);
+      text-transform: uppercase;
+      transition: color var(--transition-normal);
+    }
+
+    .navbar.scrolled .logo-text {
+      color: var(--text-main);
+    }
+
+    .logo-sub {
+      font-size: 0.6rem;
+      letter-spacing: 0.35em;
+      color: var(--accent-brass);
+      text-transform: uppercase;
+      margin-top: 2px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: rgba(251, 249, 245, 0.85);
+      position: relative;
+      padding: 0.4rem 0;
+      letter-spacing: 0.03em;
+    }
+
+    .navbar.scrolled .nav-link {
+      color: var(--text-muted);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1.5px;
+      background: var(--accent-terracotta);
+      transition: var(--transition-normal);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-light);
+    }
+
+    .navbar.scrolled .nav-link:hover, 
+    .navbar.scrolled .nav-link.active {
+      color: var(--text-main);
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      width: 28px;
+      height: 20px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: var(--text-light);
+      border-radius: 2px;
+      transition: var(--transition-normal);
+    }
+
+    .navbar.scrolled .hamburger span {
+      background-color: var(--text-main);
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background-color: var(--text-main) !important;
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: var(--text-main) !important;
+    }
+
+    /* Mobile Menu Drawer */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 88%;
+      max-width: 400px;
+      height: 100vh;
+      background: var(--bg-cream);
+      z-index: 999;
+      padding: 6.5rem 2.5rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: right var(--transition-normal);
+      box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    }
+
+    .mobile-menu.active {
+      right: 0;
+    }
+
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+
+    .mobile-nav-link {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--text-main);
+      display: block;
+    }
+
+    .mobile-nav-link:hover, .mobile-nav-link.active {
+      color: var(--accent-terracotta);
+    }
+
+    .menu-overlay-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(26, 20, 18, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 998;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-normal);
+    }
+
+    .menu-overlay-bg.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8rem 0 5rem;
+      background: linear-gradient(180deg, rgba(26,20,18,0.55) 0%, rgba(26,20,18,0.75) 60%, var(--bg-dark) 100%),
+                  url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+      color: var(--text-light);
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 880px;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 1.3rem;
+      background: rgba(251, 249, 245, 0.1);
+      border: 1px solid rgba(251, 249, 245, 0.2);
+      border-radius: var(--radius-full);
+      color: var(--accent-brass);
+      font-size: 0.775rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1.8rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 7vw, 5.2rem);
+      color: var(--text-light);
+      margin-bottom: 1.4rem;
+      line-height: 1.08;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      color: rgba(251, 249, 245, 0.85);
+      font-weight: 300;
+      margin-bottom: 2.8rem;
+      max-width: 660px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      color: rgba(251, 249, 245, 0.6);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      z-index: 2;
+      animation: bounce 2.2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
+      40% { transform: translate(-50%, -8px); }
+      60% { transform: translate(-50%, -4px); }
+    }
+
+    .brand-intro {
+      padding: 8rem 0;
+      background-color: var(--bg-cream);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.5rem;
+      align-items: center;
+    }
+
+    .intro-image-wrapper {
+      position: relative;
+    }
+
+    .intro-img {
+      border-radius: var(--radius-md);
+      height: 540px;
+      width: 100%;
+      box-shadow: var(--shadow-md);
+    }
+
+    .intro-badge-overlay {
+      position: absolute;
+      bottom: -2rem;
+      right: -2rem;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      padding: 1.8rem 2.2rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-dark);
+      border: 1px solid var(--border-dark);
+    }
+
+    .intro-badge-overlay h4 {
+      font-size: 2.2rem;
+      color: var(--accent-brass);
+      font-family: var(--font-serif);
+    }
+
+    .intro-badge-overlay p {
+      font-size: 0.8rem;
+      color: var(--text-light-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .story-section {
+      padding: 7rem 0;
+      background-color: var(--bg-surface);
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .story-highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .story-card {
+      background: var(--bg-card);
+      padding: 1.6rem 1.2rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-light);
+      text-align: center;
+    }
+
+    .story-card .number {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      color: var(--accent-terracotta);
+      font-weight: 600;
+    }
+
+    .story-card .label {
+      font-size: 0.785rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.2rem;
+    }
+
+    .origins-section {
+      padding: 8rem 0;
+      background-color: var(--bg-cream);
+    }
+
+    .origins-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .origin-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      transition: all var(--transition-normal);
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .origin-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-terracotta);
+    }
+
+    .origin-img {
+      height: 220px;
+      width: 100%;
+      position: relative;
+    }
+
+    .origin-country-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(26, 20, 18, 0.85);
+      color: var(--accent-brass);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      backdrop-filter: blur(8px);
+    }
+
+    .origin-body {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .origin-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .origin-desc {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .flavor-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: auto;
+    }
+
+    .flavor-tag {
+      background: var(--bg-surface);
+      color: var(--accent-terracotta);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-full);
+    }
+
+    .pour-feature {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      padding: 8rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pour-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .pour-img-wrapper {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-dark);
+    }
+
+    .pour-img-wrapper img {
+      height: 580px;
+      width: 100%;
+    }
+
+    .pour-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .pour-step {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      border-bottom: 1px solid var(--border-dark);
+      padding-bottom: 1.5rem;
+    }
+
+    .pour-step:last-child {
+      border-bottom: none;
+    }
+
+    .step-num {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--accent-brass);
+      line-height: 1;
+    }
+
+    .step-content h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+      color: var(--text-light);
+    }
+
+    .step-content p {
+      color: var(--text-light-muted);
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+
+    .menu-section {
+      padding: 8rem 0;
+      background-color: var(--bg-cream);
+    }
+
+    .menu-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin: 3rem 0 3.5rem;
+    }
+
+    .menu-tab {
+      padding: 0.65rem 1.6rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: all var(--transition-fast);
+    }
+
+    .menu-tab:hover, .menu-tab.active {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      border-color: var(--bg-dark);
+      box-shadow: 0 4px 15px rgba(26, 20, 18, 0.15);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2.2rem;
+    }
+
+    .menu-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-subtle);
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(150, 82, 54, 0.3);
+    }
+
+    .menu-card-img {
+      height: 220px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .menu-card-img img {
+      width: 100%;
+      height: 100%;
+      transition: transform var(--transition-slow);
+    }
+
+    .menu-card:hover .menu-card-img img {
+      transform: scale(1.08);
+    }
+
+    .menu-card-body {
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .menu-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .item-title {
+      font-size: 1.3rem;
+      color: var(--text-main);
+    }
+
+    .item-price {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent-terracotta);
+    }
+
+    .item-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.55;
+    }
+
+    .exp-section {
+      padding: 7.5rem 0;
+      background: var(--bg-surface);
+    }
+
+    .exp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+
+    .exp-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-subtle);
+      transition: var(--transition-normal);
+    }
+
+    .exp-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .exp-card-img {
+      height: 240px;
+      width: 100%;
+    }
+
+    .exp-card-body {
+      padding: 2rem;
+    }
+
+    .exp-card-body h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .exp-card-body p {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      font-weight: 300;
+    }
+
+    .gallery-section {
+      padding: 8rem 0;
+      background: var(--bg-cream);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      height: 290px;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      transition: transform var(--transition-slow);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(26, 20, 18, 0.7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity var(--transition-normal);
+      color: var(--text-light);
+    }
+
+    .gallery-overlay i {
+      font-size: 2rem;
+      color: var(--accent-brass);
+      margin-bottom: 0.5rem;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(15, 12, 10, 0.94);
+      backdrop-filter: blur(12px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-normal);
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 90%;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 75vh;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-dark);
+      border: 1px solid var(--border-dark);
+    }
+
+    .lightbox-caption {
+      margin-top: 1.2rem;
+      color: var(--accent-brass);
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+    }
+
+    .lightbox-btn {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--border-dark);
+      color: var(--text-light);
+      width: 50px; height: 50px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: var(--transition-fast);
+      z-index: 2001;
+    }
+
+    .lightbox-btn:hover {
+      background: var(--accent-brass);
+      color: var(--bg-dark);
+    }
+
+    .lightbox-close { top: 2rem; right: 2rem; }
+    .lightbox-prev { left: 2rem; top: 50%; transform: translateY(-50%); }
+    .lightbox-next { right: 2rem; top: 50%; transform: translateY(-50%); }
+
+    .reviews-section {
+      padding: 7.5rem 0;
+      background: var(--bg-surface);
+    }
+
+    .reviews-header-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 2.2rem;
+      text-align: center;
+      max-width: 480px;
+      margin: 0 auto 3.5rem;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .rating-score {
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      color: var(--accent-terracotta);
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .rating-stars {
+      color: var(--accent-brass);
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .review-text {
+      color: var(--text-main);
+      font-size: 0.975rem;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .reviewer-info h5 {
+      font-size: 1rem;
+      color: var(--text-main);
+    }
+
+    .reviewer-info p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .visit-section {
+      padding: 8rem 0;
+      background-color: var(--bg-cream);
+    }
+
+    .visit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .visit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 2.8rem;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .visit-info-item {
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .visit-info-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .visit-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      color: var(--accent-terracotta);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .visit-text h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .visit-text p, .visit-text a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 300;
+    }
+
+    .map-placeholder-box {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      height: 100%;
+      min-height: 420px;
+      background: linear-gradient(rgba(26,20,18,0.85), rgba(26,20,18,0.85)),
+                  url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=800&auto=format&fit=crop') center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem;
+      text-align: center;
+      color: var(--text-light);
+      border: 1px solid var(--border-light);
+    }
+
+    .footer {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      padding: 5.5rem 0 2.5rem;
+      border-top: 1px solid var(--border-dark);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 3.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .footer-brand p {
+      color: var(--text-light-muted);
+      font-size: 0.925rem;
+      margin-top: 1.2rem;
+      font-weight: 300;
+      max-width: 320px;
+    }
+
+    .footer-title {
+      font-size: 1.15rem;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .footer-links a {
+      color: var(--text-light-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-brass);
+    }
+
+    .footer-bottom {
+      padding-top: 2.2rem;
+      border-top: 1px solid var(--border-dark);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-light-muted);
+      font-size: 0.85rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2.2rem;
+      right: 2.2rem;
+      width: 48px; height: 48px;
+      background: var(--bg-dark);
+      color: var(--accent-brass);
+      border: 1px solid var(--border-dark);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      box-shadow: var(--shadow-dark);
+      opacity: 0;
+      pointer-events: none;
+      transition: all var(--transition-normal);
+      z-index: 990;
+    }
+
+    .back-to-top.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .back-to-top:hover {
+      background: var(--accent-terracotta);
+      color: var(--text-light);
+      transform: translateY(-4px);
+    }
+
+    @media (max-width: 1024px) {
+      .intro-grid, .story-grid, .pour-grid, .visit-grid {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-actions .btn { display: none; }
+      .hamburger { display: flex; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .intro-badge-overlay {
+        position: relative;
+        bottom: 0; right: 0;
+        margin-top: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">BARAZA</span>
+        <span class="logo-sub">SPECIALTY COFFEE</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#story" class="nav-link">Our Story</a></li>
+        <li><a href="#origins" class="nav-link">Coffee</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#visit" class="nav-link">Visit Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#visit" class="btn btn-brass">
+          <i class="fa-solid fa-location-dot"></i> Visit Baraza
+        </a>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="menu-overlay-bg" id="menuOverlayBg"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div>
+      <div class="nav-logo" style="margin-bottom: 2.5rem;">
+        <span class="logo-text" style="color: var(--text-main);">BARAZA</span>
+        <span class="logo-sub">JOHAR TOWN • LAHORE</span>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#story" class="mobile-nav-link">Our Story</a></li>
+        <li><a href="#origins" class="mobile-nav-link">Coffee Origins</a></li>
+        <li><a href="#menu" class="mobile-nav-link">Signature Menu</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#visit" class="mobile-nav-link">Visit Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="tel:+923000401857" class="btn btn-dark" style="width: 100%; margin-bottom: 1.5rem;">
+        <i class="fa-solid fa-phone"></i> +92 300 0401857
+      </a>
+    </div>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <i class="fa-solid fa-mug-hot"></i> SPECIALTY COFFEE • LAHORE
+      </div>
+      <h1 class="hero-title reveal">Coffee, Crafted With Intention.</h1>
+      <p class="hero-subtitle reveal">
+        A specialty coffee house built around exceptional beans, thoughtful brewing, and memorable everyday moments in Johar Town, Lahore.
+      </p>
+      <div class="hero-buttons reveal">
+        <a href="#origins" class="btn btn-brass"><i class="fa-solid fa-compass"></i> Explore Coffee</a>
+        <a href="#visit" class="btn btn-outline-light"><i class="fa-solid fa-store"></i> Visit Baraza</a>
+      </div>
+    </div>
+
+    <a href="#intro" class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <section class="brand-intro" id="intro">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-image-wrapper reveal">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop" alt="Baraza Pour Over Coffee" class="intro-img">
+          <div class="intro-badge-overlay">
+            <h4>2019</h4>
+            <p>Born & Brewed in Lahore</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="section-subtitle">THE BARAZA EXPERIENCE</span>
+          <h2 class="section-title">More Than A Cup Of Coffee.</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; font-weight: 300; margin-bottom: 1.5rem;">
+            Baraza Coffee brings together specialty single-origin roasts, thoughtfully prepared food, and a welcoming space designed for conversations, creativity, and pause.
+          </p>
+          <p style="color: var(--text-muted); font-size: 1.05rem; font-weight: 300; margin-bottom: 2rem;">
+            Located in Phase 2 Johar Town, our coffee house embraces third-wave coffee culture—elevating every espresso shot and pour-over through precision and passion.
+          </p>
+          <a href="#story" class="btn btn-outline-dark">Read Our Full Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story-section" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="reveal">
+          <span class="section-subtitle">OUR JOURNEY</span>
+          <h2 class="section-title">Crafting Lahore's Third-Wave Culture</h2>
+          <p style="color: var(--text-muted); font-weight: 300; line-height: 1.7;">
+            Founded in Lahore in 2019, Baraza Coffee was created to provide coffee enthusiasts with an authentic specialty coffee sanctuary. By partnering with ethical producers worldwide and mastering roasting and extraction techniques, we serve cups that celebrate true coffee complexity.
+          </p>
+
+          <div class="story-highlights">
+            <div class="story-card">
+              <div class="number">2019</div>
+              <div class="label">Founded</div>
+            </div>
+            <div class="story-card">
+              <div class="number">100%</div>
+              <div class="label">Specialty</div>
+            </div>
+            <div class="story-card">
+              <div class="number">Lahore</div>
+              <div class="label">Born & Brewed</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="border-radius: var(--radius-md); overflow: hidden; height: 420px; box-shadow: var(--shadow-md);">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=800&auto=format&fit=crop" alt="Coffee Beans Sourcing" style="width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="origins-section" id="origins">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-subtitle">SINGLE-ORIGIN SELECTION</span>
+        <h2 class="section-title">From Origin To Cup</h2>
+        <p class="section-desc">We roast and extract single-origin beans selected for their distinct terroir and expressive flavor profiles.</p>
+      </div>
+
+      <div class="origins-grid">
+        
+        <div class="origin-card reveal">
+          <div class="origin-img">
+            <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?q=80&w=600&auto=format&fit=crop" alt="Ethiopian Yirgacheffe">
+            <span class="origin-country-tag">Ethiopia</span>
+          </div>
+          <div class="origin-body">
+            <h3 class="origin-title">Yirgacheffe G1</h3>
+            <p class="origin-desc">High-altitude washed process coffee celebrated for light body, vibrant citrus brightness, and sweet floral aromas.</p>
+            <div class="flavor-tags">
+              <span class="flavor-tag">Jasmine</span>
+              <span class="flavor-tag">Bergamot</span>
+              <span class="flavor-tag">Lemon Zest</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="origin-card reveal">
+          <div class="origin-img">
+            <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?q=80&w=600&auto=format&fit=crop" alt="Colombia Huila">
+            <span class="origin-country-tag">Colombia</span>
+          </div>
+          <div class="origin-body">
+            <h3 class="origin-title">Huila Supremo</h3>
+            <p class="origin-desc">Balanced medium roast featuring deep caramel undertones, crisp red apple acidity, and a silky smooth body.</p>
+            <div class="flavor-tags">
+              <span class="flavor-tag">Red Apple</span>
+              <span class="flavor-tag">Caramel</span>
+              <span class="flavor-tag">Milk Chocolate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="origin-card reveal">
+          <div class="origin-img">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Kenya AA">
+            <span class="origin-country-tag">Kenya</span>
+          </div>
+          <div class="origin-body">
+            <h3 class="origin-title">Nyeri Kenya AA</h3>
+            <p class="origin-desc">Bold and juicy acidity with rich berry complexity, winey notes, and a lingering dark cocoa finish.</p>
+            <div class="flavor-tags">
+              <span class="flavor-tag">Blackcurrant</span>
+              <span class="flavor-tag">Grapefruit</span>
+              <span class="flavor-tag">Dark Cocoa</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="pour-feature">
+    <div class="container">
+      <div class="pour-grid">
+        <div class="pour-img-wrapper reveal">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Pour Over Process">
+        </div>
+
+        <div class="reveal">
+          <span class="section-subtitle" style="color: var(--accent-brass);">THE BARAZA POUR</span>
+          <h2 class="section-title" style="color: var(--text-light);">Slow Down. Sip Better.</h2>
+          <p style="color: var(--text-light-muted); font-weight: 300;">
+            Manual brewing is an art of patience. Every pour-over is crafted with exact water temperatures and grind sizes to unlock each bean's sweet spot.
+          </p>
+
+          <div class="pour-steps">
+            <div class="pour-step">
+              <span class="step-num">01</span>
+              <div class="step-content">
+                <h4>Select & Grind</h4>
+                <p>Single-origin beans freshly ground to optimal precision upon ordering.</p>
+              </div>
+            </div>
+
+            <div class="pour-step">
+              <span class="step-num">02</span>
+              <div class="step-content">
+                <h4>Bloom & Brew</h4>
+                <p>Controlled pulse pours that extract delicate floral and fruity notes.</p>
+              </div>
+            </div>
+
+            <div class="pour-step">
+              <span class="step-num">03</span>
+              <div class="step-content">
+                <h4>Sip & Experience</h4>
+                <p>Served at the perfect drinking temperature to reveal evolving tasting layers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-subtitle">CURATED OFFERINGS</span>
+        <h2 class="section-title">The Signature Menu</h2>
+        <p class="section-desc">Handcrafted espresso beverages, artisanal cold brews, fresh pastries, and seasonal brunch offerings.</p>
+      </div>
+
+      <!-- Menu Tab Filter -->
+      <div class="menu-tabs reveal">
+        <button class="menu-tab active" data-filter="all">All Items</button>
+        <button class="menu-tab" data-filter="coffee">Espresso & Hot Coffee</button>
+        <button class="menu-tab" data-filter="cold">Cold Brew & Chillers</button>
+        <button class="menu-tab" data-filter="brunch">Brunch & Food</button>
+        <button class="menu-tab" data-filter="pastries">House Pastries</button>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="menu-grid" id="menuGrid">
+        
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=600&auto=format&fit=crop" alt="Baraza Cappuccino">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Baraza Cappuccino</h3>
+              <span class="item-price">PKR 620</span>
+            </div>
+            <p class="item-desc">Double shot house espresso blend with velvety microfoam and rich chocolate undertones.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="cold">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=600&auto=format&fit=crop" alt="Nitro Cold Brew">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Nitro Cold Brew</h3>
+              <span class="item-price">PKR 780</span>
+            </div>
+            <p class="item-desc">18-hour steep cold brew infused with nitrogen for a silky, naturally sweet draught experience.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="brunch">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=600&auto=format&fit=crop" alt="Artisanal Avocado Toast">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Artisanal Avocado Toast</h3>
+              <span class="item-price">PKR 1,250</span>
+            </div>
+            <p class="item-desc">Sourdough bread topped with smashed hass avocado, poached organic eggs, microgreens, and chili flakes.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="pastries">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Butter Croissant">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Classic Butter Croissant</h3>
+              <span class="item-price">PKR 480</span>
+            </div>
+            <p class="item-desc">Flaky French butter croissant baked fresh every morning in house.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop" alt="Spanish Latte">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Signature Spanish Latte</h3>
+              <span class="item-price">PKR 740</span>
+            </div>
+            <p class="item-desc">Espresso paired with condensed milk and steamed textured milk for a comforting sweetness.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-category="pastries">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=600&auto=format&fit=crop" alt="Belgian Chocolate Torte">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Belgian Chocolate Torte</h3>
+              <span class="item-price">PKR 890</span>
+            </div>
+            <p class="item-desc">Rich dark chocolate torte served warm with sea salt flakes and espresso cream.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p style="text-align: center; margin-top: 2.5rem; color: var(--text-muted); font-size: 0.85rem; font-style: italic;">
+        * Prices shown are demo listings for concept display. Visit venue for exact daily offerings.
+      </p>
+    </div>
+  </section>
+
+  <section class="exp-section" id="experience">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-subtitle">ATMOSPHERE & LIFESTYLE</span>
+        <h2 class="section-title">Your Space To Pause.</h2>
+        <p class="section-desc">Designed with warm natural textures and quiet corners for everyday rituals.</p>
+      </div>
+
+      <div class="exp-grid">
+        <div class="exp-card reveal">
+          <div class="exp-card-img">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600&auto=format&fit=crop" alt="Morning Coffee Ritual">
+          </div>
+          <div class="exp-card-body">
+            <h3>Morning Ritual</h3>
+            <p>Start your early morning with freshly ground roasts and peaceful natural light.</p>
+          </div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-card-img">
+            <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?q=80&w=600&auto=format&fit=crop" alt="Work & Create">
+          </div>
+          <div class="exp-card-body">
+            <h3>Work & Create</h3>
+            <p>Thoughtful seating equipped with high-speed WiFi and calm ambiance for productivity.</p>
+          </div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-card-img">
+            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=600&auto=format&fit=crop" alt="Meet & Connect">
+          </div>
+          <div class="exp-card-body">
+            <h3>Meet & Connect</h3>
+            <p>Gather around artisanal coffee and warm conversations with friends and partners.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-subtitle">VISUAL STORIES</span>
+        <h2 class="section-title">Inside Baraza Coffee</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop" data-caption="Baraza Coffee House Atmosphere">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600&auto=format&fit=crop" alt="Cafe Interior">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-expand"></i>
+            <span>Coffee House Interior</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=1200&auto=format&fit=crop" data-caption="Precision Espresso Extraction">
+          <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=600&auto=format&fit=crop" alt="Espresso Machine">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-expand"></i>
+            <span>Espresso Art</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1200&auto=format&fit=crop" data-caption="House-Baked Pastries">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Fresh Pastries">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-expand"></i>
+            <span>Fresh Pastries</span>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1200&auto=format&fit=crop" data-caption="Manual V60 Pour-Over Brew">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Pour Over Brew">
+          <div class="gallery-overlay">
+            <i class="fa-solid fa-expand"></i>
+            <span>Pour Over Brew</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-btn lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-btn lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-btn lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <section class="reviews-section">
+    <div class="container">
+      <div style="text-align: center;" class="reveal">
+        <span class="section-subtitle">COMMUNITY FEEDBACK</span>
+        <h2 class="section-title">Loved By Coffee Enthusiasts</h2>
+      </div>
+
+      <div class="reviews-header-card reveal">
+        <div class="rating-score">4.7 ★</div>
+        <div class="rating-stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.875rem;">Based on Google Reviews (Sample Highlights)</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <p class="review-text">"Baraza serves the best manual pour-over in Johar Town. The ambiance is warm and minimalist—perfect for reading or catching up with friends."</p>
+          <div class="reviewer-info">
+            <h5>Zaid Malik</h5>
+            <p>Local Guide • 5 Stars</p>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <p class="review-text">"Outstanding specialty coffee! The nitro cold brew and croissant were top tier. Very aesthetic layout and welcoming baristas."</p>
+          <div class="reviewer-info">
+            <h5>Ayesha Rehman</h5>
+            <p>Verified Guest • 5 Stars</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit-section" id="visit">
+    <div class="container">
+      <div class="visit-grid">
+        <div class="visit-card reveal">
+          <span class="section-subtitle">FIND BARAZA COFFEE</span>
+          <h2 class="section-title" style="font-size: 2.2rem;">Come Find Your Cup.</h2>
+
+          <div class="visit-info-item">
+            <div class="visit-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="visit-text">
+              <h4>Address</h4>
+              <p>111, Block R3, Phase 2, Johar Town, Lahore, Pakistan</p>
+            </div>
+          </div>
+
+          <div class="visit-info-item">
+            <div class="visit-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="visit-text">
+              <h4>Phone</h4>
+              <p><a href="tel:+923000401857">+92 300 0401857</a></p>
+            </div>
+          </div>
+
+          <div class="visit-info-item">
+            <div class="visit-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="visit-text">
+              <h4>Email</h4>
+              <p><a href="mailto:info@barazacoffee.com">info@barazacoffee.com</a></p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="tel:+923000401857" class="btn btn-dark">Call Baraza</a>
+            <a href="https://maps.google.com/?q=Baraza+Coffee+Johar+Town+Lahore" target="_blank" rel="noopener" class="btn btn-outline-dark">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="map-placeholder-box">
+            <i class="fa-solid fa-map-location-dot" style="font-size: 3rem; color: var(--accent-brass); margin-bottom: 1rem;"></i>
+            <h3 class="font-serif" style="font-size: 1.8rem; margin-bottom: 0.5rem;">BARAZA COFFEE</h3>
+            <p style="color: var(--text-light-muted); margin-bottom: 1.5rem;">Phase 2 Johar Town, Lahore</p>
+            <a href="https://maps.google.com/?q=Baraza+Coffee+Johar+Town+Lahore" target="_blank" rel="noopener" class="btn btn-brass">
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-text" style="color: var(--text-light);">BARAZA</span>
+            <span class="logo-sub">SPECIALTY COFFEE</span>
+          </a>
+          <p>Specialty coffee, thoughtfully brewed in Lahore. Built around exceptional single-origin beans and everyday moments.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#origins">Coffee</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#visit">Visit Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <p style="color: var(--text-light-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">111, Block R3, Johar Town, Lahore</p>
+          <p style="color: var(--text-light-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">+92 300 0401857</p>
+          <p style="color: var(--text-light-muted); font-size: 0.9rem;">info@barazacoffee.com</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Official Site</h4>
+          <p style="color: var(--text-light-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+            Visit the official portal at <a href="https://barazacoffee.com" target="_blank" rel="noopener" style="color: var(--accent-brass);">barazacoffee.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Baraza Coffee. All Rights Reserved. Specialty Coffee Concept Redesign.</p>
+        <p>Born & Brewed in Lahore.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      // 1. Sticky Navigation Controller
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // 2. Mobile Drawer Navigation
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuOverlayBg = document.getElementById('menuOverlayBg');
+
+      function toggleMobileMenu() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        menuOverlayBg.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+      }
+
+      hamburger.addEventListener('click', toggleMobileMenu);
+      menuOverlayBg.addEventListener('click', toggleMobileMenu);
+
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (mobileMenu.classList.contains('active')) toggleMobileMenu();
+        });
+      });
+
+      // 3. Intersection Observer Scroll Reveal
+      const revealElements = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      // 4. Interactive Signature Menu Filter
+      const menuTabs = document.querySelectorAll('.menu-tab');
+      const menuCards = document.querySelectorAll('.menu-card');
+
+      menuTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          menuTabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          const filter = tab.getAttribute('data-filter');
+
+          menuCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'flex';
+              setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(20px)';
+              setTimeout(() => { card.style.display = 'none'; }, 250);
+            }
+          });
+        });
+      });
+
+      // 5. Gallery Lightbox Controller
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const lightboxClose = document.getElementById('lightboxClose');
+      const lightboxPrev = document.getElementById('lightboxPrev');
+      const lightboxNext = document.getElementById('lightboxNext');
+
+      let galleryIndex = 0;
+      const galleryData = Array.from(galleryItems).map(item => ({
+        src: item.getAttribute('data-src'),
+        caption: item.getAttribute('data-caption')
+      }));
+
+      function openLightbox(index) {
+        galleryIndex = index;
+        lightboxImg.src = galleryData[index].src;
+        lightboxCaption.textContent = galleryData[index].caption;
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      function nextLightbox() {
+        galleryIndex = (galleryIndex + 1) % galleryData.length;
+        openLightbox(galleryIndex);
+      }
+
+      function prevLightbox() {
+        galleryIndex = (galleryIndex - 1 + galleryData.length) % galleryData.length;
+        openLightbox(galleryIndex);
+      }
+
+      galleryItems.forEach((item, idx) => {
+        item.addEventListener('click', () => openLightbox(idx));
+      });
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxNext.addEventListener('click', nextLightbox);
+      lightboxPrev.addEventListener('click', prevLightbox);
+
+      document.addEventListener('keydown', (e) => {
+        if (!lightboxModal.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextLightbox();
+        if (e.key === 'ArrowLeft') prevLightbox();
+      });
+
+      // 6. Back To Top Floating Action
+      const backToTopBtn = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 450) {
+          backToTopBtn.classList.add('active');
+        } else {
+          backToTopBtn.classList.remove('active');
+        }
+      });
+
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 7. Scrollspy Active Link State
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(sec => {
+          if (window.scrollY >= (sec.offsetTop - 200)) {
+            current = sec.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+    });
+  </script>
+</body>
+</html>
